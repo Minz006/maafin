@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Gaya umum untuk latar belakang overlay */
+.container-prompt {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Gaya kotak prompt */
+.prompt-box {
+  position: relative;
+    background-color: #fff;
+    border-radius: 5px;
+    width: 80%;
+    padding: 20px;
+    text-align: justify;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transform: scale(0.9);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Animasi muncul */
+.prompt-box.show {
+    transform: scale(1);
+    opacity: 1;
+    position: relative;
+}
+
+/* Gaya heading */
+.prompt-box h2 {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000;
+}
+
+/* Gaya input */
+.prompt-box p {
+  font-size: 12px;
+  color:  #333;
+    width: 100%;
+    position: relative;
+    transition:all 0.7s ease;
+    margin-bottom: 10px;
+}
+/* Gaya tombol */
+.prompt-box .btn {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  /* background: gray; */
+}
+.prompt-box .btn button {
+  flex: 1 1 150px;
+    padding: 7px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin: 5px;
+    outline: none;
+    font-size: 13px;
+    text-align: center;
+}
+
+.prompt-box .btn button.ok {
+    background-color:  #008500;
+    color: white;
+}
+
+.prompt-box .btn button.ok:hover {
+    background-color: #07ba07;
+}
+
+.prompt-box .btn button.cancel {
+    background-color: #6c757d;
+    color: white;
+}
+.prompt-box .btn button.hidden {
+  display: none;
+}
+.prompt-box .btn button.cancel:hover {
+    background-color: #848d96;
+}

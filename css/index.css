@@ -1,0 +1,72 @@
+@font-face {
+  font-family: poppins;
+  font-weight: normal;
+  font-style: normal;
+  src: url('font/poppins.woff') format('woff');
+}
+
+:root {
+  font-size: 13pt;
+  --primer:  #fff;
+  --primery: #f5f5f5;
+  --sekunder: #000;
+  --paragraf: #a1b2c3;
+  --succes:  #007;
+  /* --succes: #ff4500; */
+  /* --succes: #4c4c4c; */
+  --cencel: #dc3545;
+  --abu: #6c757d;
+  --shd: -3px 3px 17px #0005;
+  --transparent: rgba(229,229,229, 0.7);
+}
+.dark {
+  --primer: #000;
+  --primery: #212121;
+  --sekunder:#fff;
+  --succes: #007bff;
+  --shd: 0 0 10px #007bff;
+  --transparent: rgba(33,33,33,0.7);
+  
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* scroll-behavior: smooth; */
+  position: relative;
+}
+
+.shd { box-shadow: var(--shd); }
+
+body {
+  position: relative;
+  font-family:poppins, Arial, sans-serif;
+  background: var(--primer);
+  width: 100vw;
+  overflow-x: hidden;
+
+}
+
+
+/* animasi scroll*/
+.scroll {
+  --i : 2em;
+  transform: translateY(var(--i));
+  opacity: 0;
+  transition: all 0.8s ease;
+  position: relative;
+}
+
+.scroll:nth-child(odd) {
+  transform: translateY(calc(var(--i) * -1));
+}
+
+.scroll.gulir {
+  transform: translateY(calc(var(--i) - var(--i)));
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+    :root { font-size: 9pt; }
+}
