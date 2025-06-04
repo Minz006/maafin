@@ -42,7 +42,8 @@
   opacity: 0;
   transition-delay: 2s;
   transform: scale(0.8);
-}.pesan.aktif::before {
+}
+.pesan.aktif::before {
   opacity: 1;
   transform: scale(1);
 }
