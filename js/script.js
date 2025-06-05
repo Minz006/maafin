@@ -19,8 +19,8 @@ document.querySelector('input')
   let validasi = kode.includes(input)
   if (!validasi){
     peringatan("maaf sandi yang anda masukkan salah, kami akan menutup browser ini!",() => {
-      window.location.replace('')
-      window.close()
+      window.close();
+      window.location.replace('notFount')
     })
   return
   }
