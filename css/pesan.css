@@ -40,7 +40,7 @@
   z-index: -1;
   box-shadow: 0 0 10px #ffce00;
   opacity: 0;
-  transition-delay: 2s;
+  transition-delay: 2.5s;
   transform: scale(0.8);
 }
 .pesan.aktif::before {
@@ -51,7 +51,7 @@
   color: #ffce00;
   text-align: center;
   padding: 30px 20px 10px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
   text-shadow: 0 0 10px #ffce00;
@@ -59,7 +59,7 @@
 .pesan p{
   text-align: justify;
   padding: 0 25px 20px;
-  font-size: 11px;
+  font-size: 9px;
   color: #e7e7e7;
   text-shadow: 0 0 5px #fff;
   /* color: #ffce00; */
